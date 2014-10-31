@@ -14,7 +14,9 @@
 //Homepage
 Route::get('/', function()
 {
-	return View::make('index');
+	
+return View::make('index');
+
 });
 
 //Show Lorem Ipsum Generator Page
@@ -23,7 +25,18 @@ Route::get('/loremipsum', function(){
 });
 
 //Process Lorem Ipsum Request
+
 Route::post('/loremipsum', function(){
+//Put user input in a variable
+$paragraphnum = Input::get('paragraphs');
+//call lorem ipsum generator
+$generator = new LoremGenerator();
+$paragraphs = $generator->getParagraphs($paragraphnum);
+$makeparagraphs = implode('<p>', $paragraphs);
+//make the view with passed data
+return View::make('loremipsum')
+	-> with ('paragraphnum', $paragraphnum)
+	-> with ('create', $makeparagraphs);
 
 
 });
@@ -35,6 +48,20 @@ Route::get('/usergenerator', function(){
 
 //Process User Generation Request
 Route::post('/usergenerator', function(){
+//get the user input for the number of users they want
+$users = Input::get('users');
+$faker = Faker::create();
+for ($i=0; $i<$users; $i++){
+	 $names[$i]['name'] = ($faker->name);
+};
+return View::make('randomuser')
+	-> with ('users', $users)
+	-> with ('names', $names);
 
+});
 
+Route::get('/packagetest', function()
+{
+
+	
 });
