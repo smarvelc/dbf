@@ -4,7 +4,7 @@ Live URL: http://dbf.smarvelc.me
 
 The Developer's Best friend is my title for Project 3. I recently started a new job and my life has become crazy because of it. As a result this project is not as polished as I would like it to be, but it still does the job of allowing users to create a number of paragraphs of filler text (anywhere between 1 and 5), and a number of fake users (anywhere between 1 and 10). A page similar to this could be useful for web developers looking to generate filler content and users to test in their sites. 
 
-Jing Screencast Demo Link: 
+Jing Screencast Demo Link: http://www.screencast.com/t/6BpQcsTfV
 
 Note: Again, very sorry for the delay and appearance of this project. Balancing my new job and this class has been tough for me. I'm learning a ton from dwa, and hope to continue to do so. 
 
