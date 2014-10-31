@@ -1,0 +1,45 @@
+/* CSS Document */
+
+body {
+	background-color: #DDEDF4;
+}
+
+h1 {
+	text-align: center;
+	color: #272727;
+	font-size: 45px;
+}
+
+ul {
+	display: inline;
+}
+
+li {
+	display:inline;
+	text-align: justify;
+	font-size: 18px;
+
+}
+
+p {
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+a:link {
+	color:#272727;
+	text-decoration: none;
+}
+
+a:visited {
+	color:#272727;
+	text-decoration: none;
+}
+
+a:hover {
+	color:#96d4b3;
+}
+
+#navigation {
+	text-align: center;
+}

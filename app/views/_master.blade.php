@@ -6,17 +6,19 @@
 
 		<meta charset='utf-8'>
 
+		<link rel='stylesheet' href='/css/dbf.css' type='text/css'>
+
 		@yield('head')
 </head>
 <body>
 
-<div>
+<div id="navigation">
 
 	<h1>The Developer's Best Friend</h1>
 
 	<ul>
-		<li><a href='/'>Home</a></li>
-		<li><a href='/loremipsum'>Random Text Generator</a></li>
+		<li><a href='/'>Home</a> |</li>
+		<li><a href='/loremipsum'>Random Text Generator</a> |</li>
 		<li><a href='/usergenerator'>Random User Generator</a></li>
 	</ul>	
 

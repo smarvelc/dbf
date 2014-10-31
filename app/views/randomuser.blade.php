@@ -10,6 +10,8 @@
 @stop
 
 @section('content')
+<br>
+<br>
 	{{ Form::open(array('url' => '/usergenerator')) }}
 		{{ Form::label('users', 'How many fake users do you want for your website?') }}
 		{{ Form::select('users', array(
@@ -31,7 +33,7 @@
 	<br>
 	@if (isset($users))
 		@for ($i=0; $i< count($names); $i++)
-		<li>{{ $names[$i]['name'] }}</li>
+		<li>{{ $names[$i]['name'] }}<br></li>
 		@endfor
 	@endif	
 @stop

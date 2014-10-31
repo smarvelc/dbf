@@ -10,6 +10,9 @@
 @stop
 
 @section('content')
+
+<br>
+<br>
 	{{ Form::open(array('url' => '/loremipsum')) }}
 		{{ Form::label('paragraphs', 'How many paragraphs of fake content do you want?') }}
 		
@@ -19,6 +22,11 @@
 				 3 => 'Three',
 				 4 => 'Four',
 				 5 => 'Five',
+				 6 => 'Six',
+				 7 => 'Seven',
+				 8 => 'Eight',
+				 9 => 'Nine',
+				 10 => 'Ten',
 		), 1) }}
 
 		{{ Form::submit('Make me some text!'); }}
